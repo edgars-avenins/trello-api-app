@@ -66,3 +66,8 @@ This section has moved here: https://facebook.github.io/create-react-app/docs/de
 ### `npm run build` fails to minify
 
 This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+
+### Trello API
+
+#### API Doc https://developer.atlassian.com/cloud/trello/rest/api-group-boards/#api-boards-id-get
+#### API Authorization https://developer.atlassian.com/cloud/trello/guides/rest-api/authorization/
