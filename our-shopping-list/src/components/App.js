@@ -12,6 +12,8 @@ export default class App extends Component {
   state = {}
 
   componentDidMount(){
+    request.get('/api')
+    .then((res) => console.log('pinged',res.body))
     request.get(`https://api.trello.com/1/members/me/boards?key=${process.env.REACT_APP_APIKEY}&token=${process.env.REACT_APP_TOKEN}`)
       .then(res => this.setState({boards: res.body}))
   }
@@ -43,7 +45,6 @@ export default class App extends Component {
   }
 
   render() {
-    console.log(process)
     return (
       <>
         <Route path='/' component={Nav} /> 
